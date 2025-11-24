@@ -19,7 +19,7 @@
 
 ## 3. Среда тестирования
 - ОС: Windows 11  
-- Browser: Google Chrome 2024  
+- Browser: Yandex browser 
 - Backend: JSON-server (localhost:4000)  
 - Frontend: Vite + React 18 (localhost:5173)
 
@@ -28,7 +28,8 @@
 ## 4. Инструменты тестирования
 - Jira / GitHub Issues  
 - Chrome DevTools  
-- Google Forms (для сбора отзывов)  
+- Google Forms (для сбора отзывов)
+- gmail (для связи) 
 - VS Code + React DevTools  
 
 ---
@@ -58,4 +59,5 @@
 
 ## 8. Список тест-кейсов
 Смотри файл **test_report.md**
+
 s
