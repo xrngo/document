@@ -29,7 +29,8 @@
 - Jira / GitHub Issues  
 - Chrome DevTools  
 - Google Forms (для сбора отзывов)
-- gmail (для связи) 
+- gmail (для связи)
+- telegram(для сбора отзывов)
 - VS Code + React DevTools  
 
 ---
@@ -59,6 +60,7 @@
 
 ## 8. Список тест-кейсов
 Смотри файл **test_report.md**
+
 
 
 
