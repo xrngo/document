@@ -108,6 +108,7 @@ const { register, handleSubmit } = useForm();
  ## 8.Контакты
 
  Email: egoregor641618@gmail.com
+ tg: @xrngo
 
 
  
