@@ -1,4 +1,4 @@
-# IE-Fe-Shop — Учебный интернет-магазин (React + Redux)
+интернет-магазин
 
 ## 1. Название проекта
 Магазин для сада
@@ -16,33 +16,39 @@
 Приложение включает страницы каталога, товара и корзины, а также взаимодействует с локальным бэкендом.
 
 ## 3. Установка и запуск
-1.cd my-project
-2.npm install
-3.npm run dev 
-4.http://localhost:5173
+- cd my-project
+- npm install
+- npm run dev 
+- http://localhost:5173
 
 
 ## 3.3. Запуск бэкенда
-### `npm i `
-### `npm run dev `
+### npm i 
+### npm run dev 
 
-## 4. Пример: мы запрашиваем список продуктов через Redux-thunk
+## 4.1. Пример: мы запрашиваем список продуктов через Redux-thunk
+``` 
+   export const fetchProducts = () => async (dispatch) => {
+    dispatch({ type: "PRODUCTS_LOADING" });
+    try {
+      const res = await fetch("http://localhost:4000/products");
+      const data = await res.json();
+      dispatch({ type: "PRODUCTS_SUCCESS", payload: data });
+    } catch (e) {
+      dispatch({ type: "PRODUCTS_ERROR", payload: e.message });
+    }
+  };
+```
 
-##    export const fetchProducts = () => async (dispatch) => {
-##     dispatch({ type: "PRODUCTS_LOADING" });
-##      try {
-##        const res = await fetch("http://localhost:4000/products");
-##        const data = await res.json();
-##        dispatch({ type: "PRODUCTS_SUCCESS", payload: data });
-##      } catch (e) {
-##        dispatch({ type: "PRODUCTS_ERROR", payload: e.message });
-##      }
-##    };
+## 4.2. React hook 
+``` 
+const { register, handleSubmit } = useForm();
 
+``` 
 
 ## 5. Структура 
 
-  my-project/
+```  my-project/
   ├─ public/
   ├─ src/
   │  ├─ assets/              
@@ -84,7 +90,7 @@
   ├─ vite.config.js
   ├─ .gitignore
   └─ README.md
-
+```
 
 
 ## 6. Технические требования
@@ -95,3 +101,13 @@
 - Формы: react-hook-form
 - Node.js: версия 17+
 - ОС: Windows / macOS / Linux
+
+ ## 7.Автор
+ Авдиенко Егор Сергеевич
+
+ ## 8.Контакты
+
+ Email: egoregor641618@gmail.com
+
+
+ 
